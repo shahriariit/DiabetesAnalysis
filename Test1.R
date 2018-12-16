@@ -55,6 +55,6 @@ results1=resamples(list(BAYESGLM=fit.bayesglm1,RPART2=fit.rpart21,SVMLINEAR3=fit
                         GCVEarth=fit.gcvEarth1,PARRF=fit.parRF1,PLR=fit.plr1,MULTINOM=fit.multinom1,
                         REGLOGISTIC=fit.regLogistic1,SDA=fit.sda1,C5RULES=fit.c51,SDWD=fit.sdwd1, SPARSELDA=fit.sparseLDA1, 
                         GBM=fit.gbm1,GLMBOOST=fit.glmboost1,GAMBOOST=fit.gamboost1,NB=fit.nb1,c5.0=fit.c51,LDA=fit.lda1,
-                        SVMLINEAR=fit.svmLinear1,SVMRADIAL=fit.svmRadial1,,HDDA=fit.hdda1, LMT=fit.LMT1,FDA=fit.fda1, 
+                        SVMLINEAR=fit.svmLinear1,SVMRADIAL=fit.svmRadial1,HDDA=fit.hdda1, LMT=fit.LMT1,FDA=fit.fda1, 
                         KERNELPLS=fit.kernelpls1,GPLS=fit.gpls1,MLP=fit.mlp1,GLM=fit.glm1))
 bwplot(results1)
