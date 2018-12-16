@@ -37,6 +37,16 @@ fit.pda=rf("pda")
 fit.mda=rf("mda")
 fit.lvq=rf("lvq")
 fit.Mlda=rf("Mlda")
+fit.fda=rf("fda")
+fit.pam=rf("pam")
+fit.kernelpls=rf("kernelpls")
+fit.pls=rf("pls")
+fit.gpls=rf("gpls")
+fit.rf=rf("rf")
+fit.mlp=rf("mlp")
+fit.glm=rf("glm")
+
+
 
 results=resamples(list(adaboost=fit.adaboost,treebag=fit.treebag,
                        glmboost=fit.glmboost,gamboost=fit.gamboost,rpart=fit.rpart,
@@ -44,5 +54,8 @@ results=resamples(list(adaboost=fit.adaboost,treebag=fit.treebag,
                        LDA=fit.lda,C5=fit.c5,SVMLinear=fit.svmLinear, 
                        SVMRadial=fit.svmRadial, LMT=fit.LMT, PDA=fit.pda,       
                        HDDA=fit.hdda,QDA=fit.qda, MDA=fit.mda, LVQ=fit.lvq,
-                       LogitBoost=fit.logitboost, MLDA=fi))
+                       LogitBoost=fit.logitboost, MLDA=fit.Mlda,FDA=fit.fda,PAM=fit.pam,
+                       KERNELPLS=fit.kernelpls,GPLS=fit.gpls,RF=fit.rf,MLP=fit.mlp
+                       ,GLM=fit.glm))
 summary(results)
+bwplot(results)
