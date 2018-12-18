@@ -33,4 +33,3 @@ result_diabetesf3=summarize_res(diabetesf3List)
 result_diabetesf4=summarize_res(diabetesf4List)
 result_diabetesf5=summarize_res(diabetesf5List)
 result_diabetesf6=summarize_res(diabetesf6List)
-
