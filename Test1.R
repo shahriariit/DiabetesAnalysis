@@ -51,6 +51,7 @@ fit.c5rules1=rf1("C5.0Rules")
 fit.treebag1=rf1("treebag")
 
 
+<<<<<<< HEAD
 results1=resamples(list(GAMBOOST=fit.gamboost1,REGLOGISTIC=fit.regLogistic1,MULTINOM=fit.multinom1,BAYESGLM=fit.bayesglm1,
                        PLR=fit.plr1,GLM=fit.glm1,GPLS=fit.gpls1,SVMLINEAR3=fit.svmLinear31,SPARSELDA=fit.sparseLDA1,
                        PDA=fit.pda1,LDA=fit.lda1,LMT=fit.LMT1,RFLDA=fit.RFlda1,FDA=fit.fda1,KERNELPLS=fit.kernelpls1,
@@ -59,3 +60,19 @@ results1=resamples(list(GAMBOOST=fit.gamboost1,REGLOGISTIC=fit.regLogistic1,MULT
                        HDDA=fit.hdda1,PARRF=fit.parRF1,MLDA=fit.Mlda1,SVMRADIAL=fit.svmRadial1,C5=fit.c51,MLP=fit.mlp1,
                        MDA=fit.mda1,NB=fit.nb1,RPART2=fit.rpart21,C5RULES=fit.c5rules1,TREEBAG=fit.treebag1))
 dotplot(results1)
+=======
+#results1=resamples(list(treebag=fit.treebag1,glmboost=fit.glmboost1,gamboost=fit.gamboost1,rpart=fit.rpart1,
+#                       ctree=fit.ctree1,knn=fit.knn1,nb=fit.nb1,LDA=fit.lda1,C5=fit.c51,SVMLinear=fit.svmLinear1, 
+#                       SVMRadial=fit.svmRadial1, LMT=fit.LMT1, PDA=fit.pda1,       
+#                       HDDA=fit.hdda1,QDA=fit.qda1, MDA=fit.mda1, LVQ=fit.lvq1,
+#                       LogitBoost=fit.logitboost1, MLDA=fit.Mlda1,FDA=fit.fda1,PAM=fit.pam1,
+#                       KERNELPLS=fit.kernelpls1,GPLS=fit.gpls1,MLP=fit.mlp1,GLM=fit.glm1))
+
+results1=resamples(list(BAYESGLM=fit.bayesglm1,RPART2=fit.rpart21,SVMLINEAR3=fit.svmLinear31,LOCLDA=fit.loclda1,
+                        GCVEarth=fit.gcvEarth1,PARRF=fit.parRF1,PLR=fit.plr1,MULTINOM=fit.multinom1,
+                        REGLOGISTIC=fit.regLogistic1,SDA=fit.sda1,C5RULES=fit.c51,SDWD=fit.sdwd1, SPARSELDA=fit.sparseLDA1, 
+                        GBM=fit.gbm1,GLMBOOST=fit.glmboost1,GAMBOOST=fit.gamboost1,NB=fit.nb1,c5.0=fit.c51,LDA=fit.lda1,
+                        SVMLINEAR=fit.svmLinear1,SVMRADIAL=fit.svmRadial1,HDDA=fit.hdda1, LMT=fit.LMT1,FDA=fit.fda1, 
+                        KERNELPLS=fit.kernelpls1,GPLS=fit.gpls1,MLP=fit.mlp1,GLM=fit.glm1))
+bwplot(results1)
+>>>>>>> 445c21133c139bb3136ac6c77818fe9798903d63

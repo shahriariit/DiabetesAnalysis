@@ -7,7 +7,6 @@ rfrc<-function(x,y){
 }
 
 
-summarize_res <- function(x){return(resamples(modellist))}
 
 diabetesllList = list()
 diabetesfl1List = list()

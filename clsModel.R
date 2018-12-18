@@ -6,11 +6,9 @@ metric <- "Accuracy"
 
 rf<-function(x,y){
   set.seed(7)
-  return(train(as.character(Outcome)~., data=x, metric=metric, method=y, trControl=control))
+  return(train(Outcome~., data=x, metric=metric, method=y, trControl=control))
 }
 
-
-summarize_res <- function(x){ return(resamples(modellist))}
 
 diabetesfitList = list()
 diabetesfit1List = list()
